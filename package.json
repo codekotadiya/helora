@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --import ./scripts/load-test-hooks.mjs --test src/lib/launchpad-handoff.test.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.8",
